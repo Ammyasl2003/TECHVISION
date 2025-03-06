@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Login</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    
+
+.login-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 50px;
+
+}
+
+h2 {
+    text-align: center;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: navy;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo" style="margin-left: 10%;font-family: 'Courier New', Courier, monospace;font-size: 1.3rem;">PLACEMENT CELL , PUSSGRC HOSHIARPUR</div>
+        
+    </header>
+
+    <div class="login-container">
+        <h2>Coordinator</h2>
+        <form id="loginForm">
+            <div class="input-group">
+                <label for="student_name"> Name:</label>
+                <input type="text" id="student_name" name="student_name" required>
+            </div>
+
+            <div class="input-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <div class="input-group">
+                <button type="submit" id="submit">Login</button>
+            </div>
+        </form>
+
+        <div id="error-message" style="color: red; display: none;">
+            Invalid credentials. Please try again.
+        </div>
+        
+        <div id="success-message" style="color: green; display: none;">
+            Login successful! Welcome, <span id="welcome-name"></span>.
+        </div>
+        <p></p>
+    </div>
+
+    
+<div class="director-message" id="director">
+    <div class="director-image">
+        <img src="gallery/AMMYBAI.jpg" alt="Prof. Shireesh Kedare">
+    </div>
+    <div class="director-text">
+        <h4 class="message-title">TECHNICAL HEAD</h4>
+        <p class="message-content">"Embrace innovation, think critically, and push boundaries—technology thrives on curiosity and creativity. Keep learning, keep experimenting, and shape the future with your ideas!"
+        <p class="director-name"><strong>AMANDEEP SINGH MAJITHIA</strong></p>
+        <p class="director-role">P.U. Swami Sarvanand Giri Regional Centre
+            Panjab University Regional Centre
+            Hoshiarpur, Punjab
+            India</p>
+    </div>
+</div>
+
+<section class="contact-container">
+    <div class="contact-info">
+        <h2>Get in Touch</h2>
+        <p>If you have any queries, feel free to reach out to us.</p>
+        <p><strong>Email:</strong> ----</p>
+        <p><strong>Phone:</strong> +91 ----</p>
+        <p><strong>Address:</strong> PUSSGRC HOSHIARPUR</p>
+    </div>
+    <div class="contact-form">
+        <h2>Send a Message</h2>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit" style=" background: #3f51b5;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 18px;
+            width: 200px;
+            text-align: center;
+            transition: 0.3s;">
+            Submit
+            </button>
+        </form>
+    </div>
+</section>
+ <!-- Footer Section -->
+ <footer>
+    <div class="footer-container">
+        <!-- Footer Left Section -->
+        <div class="footer-left">
+            <p>&copy; 2025 A-TECH. All rights reserved.</p>
+        </div>
+</footer>
+</body>
+</html>
